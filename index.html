@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awsome Cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Tailwind Css -->
+    <link href="./style/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#282C33]">
+    <!-- Header Section -->
+    <header class="py-4">
+      <div class="max-w-[1320px] mx-auto px-[15px]">
+        <nav class="flex items-center">
+          <div class="nav-logo max-w-[52px]">
+            <a href="index.html" class="w-full h-full inline-block">
+              <img
+                src="./assets/Logo.png"
+                alt=""
+                class="w-full h-full object-cover grayscale"
+              />
+            </a>
+          </div>
+          <div
+            class="ml-auto navbar-collapsed bg-[#282C33] fixed top-[83.2px] sm:top-[93.2px] left-0 h-full w-[400px] z-50 flex flex-col transform -translate-x-full pt-8 md:pt-0 px-8 md:px-0 transition-transform duration-300 md:static md:translate-x-0 md:h-auto md:w-auto md:bg-transparent md:flex-row"
+            id="nav-collapsed"
+          >
+            <ul
+              class="flex flex-col gap-5 md:flex-row md:gap-0 items-start md:items-center [&_a]:lowercase [&_a]:font-semibold [&_a]:text-[#ABB2BF] [&_a:hover]:text-white [&_a]:text-[32px] md:[&_a]:text-[16px] [&_span]:text-[#C778DD] [&_span]:-mr-2"
+            >
+              <li class="mr-0 md:mr-[18px] lg:mr-[38px]">
+                <a href="" class="nav-links text-white!"><span>#</span> Home</a>
+              </li>
+              <li class="mr-0 md:mr-[18px] lg:mr-[38px]">
+                <a href="" class="nav-links"><span>#</span> About Us</a>
+              </li>
+              <li class="mr-0 md:mr-[18px] lg:mr-[38px]">
+                <a href="" class="nav-links"><span>#</span> Project</a>
+              </li>
+              <li class="mr-0 md:mr-[18px] lg:mr-[38px]">
+                <a href="" class="nav-links"><span>#</span> Blog</a>
+              </li>
+              <li class="mr-0 md:mr-[18px] lg:mr-[38px]">
+                <a href="" class="nav-links"><span>#</span> Contact Us</a>
+              </li>
+            </ul>
+            <div class="nav-btn mt-8 md:mt-0">
+              <a
+                href=""
+                class="px-5 border-2 border-[#C778DD] sm:px-6 lg:px-[35px] py-3 text-[32px] md:text-[16px] font-semibold text-white hover:bg-[#C778DD]/20 transition-all duration-500 ease-in-out"
+                >Download CV
+              </a>
+            </div>
+          </div>
+
+          <button
+            class="block md:hidden text-white ml-auto text-xl cursor-pointer"
+            id="toggler-btn"
+          >
+            <svg
+              width="35"
+              height="35"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect y="5" width="24" height="2" fill="#D9D9D9" />
+              <rect x="9" y="12" width="15" height="2" fill="#D9D9D9" />
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- Banner Section -->
+      <section class="banner-sec py-5 sm:py-8 flex items-center">
+        <div class="max-w-[1320px] mx-auto px-[15px] w-full">
+          <div class="flex flex-wrap items-center flex-col-reverse lg:flex-row">
+            <div class="w-full lg:w-[55%] px-[15px]">
+              <div class="banner-cntn mt-6 sm:mt-8 md:mt-12 lg:my-0">
+                <h1
+                  class="title1 max-w-full lg:max-w-[537px] text-[22px] sm:text-[28px] md:text-4xl/[45px] font-semibold text-white"
+                >
+                  Raktim is a
+                  <span class="text-[#C778DD]">web designer</span> and
+                  <span class="text-[#C778DD]">front-end developer</span>
+                </h1>
+                <p
+                  class="text-[#ABB2BF] text-[12px] sm:text-[16px]/[25px] mt-2 sm:mt-5 md:mt-8 mb-6 max-w-full lg:max-w-[463px]"
+                >
+                  He crafts responsive websites where technologies meet
+                  creativity
+                </p>
+                <a
+                  href=""
+                  class="px-5 border-2 border-[#C778DD] sm:px-6 lg:px-[35px] py-3 text-[12px] sm:text-[14px] md:text-[16px] font-semibold text-white hover:bg-[#C778DD]/20 transition-all duration-500 ease-in-out"
+                  >Contact me!!</a
+                >
+              </div>
+            </div>
+            <div class="w-full lg:w-[45%] px-[15px]">
+              <div class="banner-img max-w-[470px] mx-auto lg:ml-auto relative">
+                <img
+                  src="./assets/Banner-img.png"
+                  alt=""
+                  class="w-full h-full object-cover grayscale relative z-20"
+                />
+                <div
+                  class="banner-img-sec max-w-[100px] sm:max-w-[170px] h-[100px] sm:h-[170px] absolute top-[120px] sm:top-[140px] left-3"
+                >
+                  <img
+                    src="./assets/Banner-img2.png"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div
+                  class="banner-img-third max-w-[70px] sm:max-w-[84px] absolute bottom-10 sm:bottom-[50px] -right-3"
+                >
+                  <img
+                    src="./assets/Banner-img3.png"
+                    alt=""
+                    class="w-full h-full object-cover relative z-30"
+                  />
+                </div>
+              </div>
+              <div
+                class="img-desc bg-transparent border-2 border-[#ABB2BF] max-w-[320px] sm:max-w-[450px] mx-auto lg:ml-auto p-1 sm:p-2 flex items-center"
+              >
+                <div class="square w-4 h-4 bg-[#C778DD] mr-2.5"></div>
+                <p
+                  class="text-[#ABB2BF] font-medium text-[12px] sm:text-sm md:text-[16px]"
+                >
+                  Currently working on
+                  <span class="text-white font-semibold">Portfolio</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>
