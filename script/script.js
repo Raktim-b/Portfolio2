@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   toggleBtn.addEventListener("click", () => {
     navToggler.classList.toggle("translate-x-0");
-    
+
     html.classList.toggle("overflow-hidden");
     body.classList.toggle("overflow-hidden");
   });

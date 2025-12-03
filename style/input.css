@@ -6,7 +6,7 @@ body {
   font-family: "Fira Code", monospace;
 }
 .auto-scroll-itms {
-  animation: rightTOLeft 12s linear infinite;
+  animation: rightTOLeft 14s linear infinite;
 }
 .auto-scroll-itms:nth-child(1) {
   animation-delay: -0s;
@@ -25,6 +25,9 @@ body {
 }
 .auto-scroll-itms:nth-child(6) {
   animation-delay: -10s;
+}
+.auto-scroll-itms:nth-child(7) {
+  animation-delay: -12s;
 }
 
 @keyframes rightTOLeft {
