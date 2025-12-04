@@ -5,6 +5,11 @@ body {
   overflow-x: hidden;
   font-family: "Fira Code", monospace;
 }
+/* Auto scroll */
+.auto-scroll:hover > .auto-scroll-itms {
+  cursor: pointer;
+  animation-play-state: paused;
+}
 .auto-scroll-itms {
   animation: rightTOLeft 14s linear infinite;
 }

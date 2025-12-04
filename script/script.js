@@ -10,4 +10,22 @@ document.addEventListener("DOMContentLoaded", () => {
     html.classList.toggle("overflow-hidden");
     body.classList.toggle("overflow-hidden");
   });
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    speed: 3000,
+    autoplay: {
+      delay: 0,
+      pauseOnMouseEnter: true, // Pause autoplay when mouse enters the Swiper container
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      // when window width is >= 576px
+      768: {
+        slidesPerView: 2,
+        // spaceBetween: 30,
+      },
+    },
+  });
 });
