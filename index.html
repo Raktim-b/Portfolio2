@@ -19,9 +19,11 @@
     <!-- Tailwind Css -->
     <link href="./style/output.css" rel="stylesheet" />
   </head>
-  <body class="bg-[#0f0f0f] overflow-x-hidden">
+  <body class="overflow-x-hidden bg-[#0f0f0f]">
     <!-- Header Section -->
-    <header class="pb-3 pt-4 border-b border-[#FFFFFF26]">
+    <header
+      class="pb-2 pt-3 border-b border-[#FFFFFF26] fixed z-20 left-0 right-0 bg-[#0f0f0f]"
+    >
       <div class="max-w-[1500px] mx-auto px-[15px]">
         <nav class="flex items-center">
           <div class="nav-logo max-w-[140px]">
@@ -128,7 +130,7 @@
     <main>
       <!-- Banner Section -->
       <section
-        class="banner-sec relative z-0 pt-10 bg-[#0f0f0f] overflow-hidden"
+        class="banner-sec relative z-0 pt-[100px] lg:pt-[120px] bg-[#0f0f0f] overflow-hidden"
       >
         <!-- Background Stripes Layer -->
         <div
@@ -137,16 +139,16 @@
 
         <!-- TOP MASK FADE -->
         <div
-          class="absolute top-0 left-0 right-0 h-[60px] md:h-[100px] lg:h-[180px] -z-10 bg-[linear-gradient(180deg,rgba(15,15,15,1)_0%,rgba(15,15,15,0)_100%)]"
+          class="absolute top-0 left-0 right-0 h-[600px] -z-10 bg-[linear-gradient(180deg,rgba(15,15,15,1)_0%,rgba(15,15,15,0)_100%)]"
         ></div>
 
-        <div class="max-w-[1500px] mx-auto px-[15px] w-full relative z-10">
+        <div class="max-w-[1300px] mx-auto px-[15px] w-full">
           <div class="banner-hdr">
             <div class="mx-[-15px] flex flex-wrap items-center">
               <!-- LEFT COLUMN -->
               <div class="col-4 w-full sm:w-[35%] px-[15px]">
                 <div
-                  class="banner-cntn max-w-full sm:max-w-[400px] ml-0 sm:ml-auto relative z-20"
+                  class="banner-cntn max-w-full sm:max-w-[400px] relative z-20"
                 >
                   <h2
                     class="title2 text-[21px]/5 md:text-[26px]/6 lg:text-[32px]/8 font-bold text-[#555555] tracking-tighter"
@@ -176,7 +178,7 @@
                   <img
                     src="./assets/Banner-img.png"
                     alt=""
-                    class="w-full h-full object-contain grayscale opacity-80"
+                    class="w-full h-full object-contain opacity-70"
                   />
                   <div
                     class="absolute bottom-0 left-0 right-0 h-[150px] sm:h-[110px] lg:h-[220px] bg-linear-to-b from-transparent to-[#0f0f0f] z-10 pointer-events-none"
@@ -460,6 +462,67 @@
                   </g>
                 </g>
               </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section class="about-sec py-10 md:py-20 relative">
+        <div
+          class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_2px,transparent_1px)] bg-size-[112.5px_100%] sm:bg-size-[153.6px_100%] xl:bg-size-[288px_100%]"
+        ></div>
+        <div class="max-w-[1300px] mx-auto px-[15px] w-full relative z-10">
+          <div class="mx-[-15px] flex flex-wrap im">
+            <div class="col-5 w-full md:w-[40%] px-[15px]">
+              <div class="about-img max-w-[80%] sm:max-w-[45%] md:max-w-full mx-auto mb-5 md:mb-0 ">
+                <img
+                  src="./assets/About-img.png"
+                  alt=""
+                  class="w-full h-full rounded-4xl opacity-70"
+                />
+              </div>
+            </div>
+            <div class="col-7 w-full md:w-[60%] px-[15px]">
+              <div class="about-hdr">
+                <h2
+                  class="title2 flex gap-2 items-center relative z-20 text-[#cacaca] uppercase font-bold"
+                >
+                  <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                  <svg
+                    width="15px"
+                    height="15px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM12.5 5.5C13.0523 5.5 13.5 5.94772 13.5 6.5V10.5H17.5C18.0523 10.5 18.5 10.9477 18.5 11.5V12.5C18.5 13.0523 18.0523 13.5 17.5 13.5H13.5V17.5C13.5 18.0523 13.0523 18.5 12.5 18.5H11.5C10.9477 18.5 10.5 18.0523 10.5 17.5V13.5H6.5C5.94772 13.5 5.5 13.0523 5.5 12.5V11.5C5.5 10.9477 5.94772 10.5 6.5 10.5H10.5V6.5C10.5 5.94772 10.9477 5.5 11.5 5.5H12.5Z"
+                      fill="#cacaca"
+                    />
+                  </svg>
+                  Who I Am.
+                </h2>
+              </div>
+              <div
+                class="about-cntn text-[#cacaca] text-[25px]/[120%] lg:text-[34px]/[115%] xl:text-[45px]/[115%] tracking-tighter font-bold my-3 sm:my-5 lg:my-10"
+              >
+                I’m a frontend developer focused on creating clean, modern, and
+                user-friendly digital experiences.
+                <span class="text-[#555]"
+                  >Currently learning Advanced JavaScript and TypeScript, I aim
+                  to build scalable, high-performance applications that make a
+                  meaningful impact.</span
+                >
+              </div>
+              <div
+                class="key-features flex flex-wrap gap-3 [&_span]:bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] [&_span]:px-2.5 [&_span]:py-1 [&_span]:text-[#cacaca] [&_span]:rounded-lg [&_span]:font-semibold"
+              >
+                <span>Responsive Design</span>
+                <span>Interactive UI</span>
+                <span>Animation</span>
+              </div>
             </div>
           </div>
         </div>

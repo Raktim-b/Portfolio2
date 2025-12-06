@@ -13,6 +13,7 @@ body {
 h1 {
   font-family: "Anton", sans-serif;
 }
+
 /* Header Section */
 #toggler-btn.tilted .toggle-line1 {
   transition: all 0.3s ease-in-out;
@@ -81,6 +82,8 @@ h1 {
 .auto-scroll-itms:nth-child(8) {
   animation-delay: -14s;
 }
+/* About Section */
+
 @keyframes rightTOLeft {
   0% {
     right: -4%;
@@ -176,5 +179,10 @@ h1 {
     100% {
       right: 100%;
     }
+  }
+  /* About Section */
+  .about-cntn {
+    font-size: 17px;
+    line-height: 126%;
   }
 }
