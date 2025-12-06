@@ -1,10 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
 @import "tailwindcss";
+:root {
+  --animate-pulse: pulse 2s cubic-bezier(1, -0.1, 0, 1.21) infinite;
+}
+
 html,
 body {
   overflow-x: hidden;
-  font-family: "Fira Code", monospace;
+  font-family: "Geist", sans-serif;
 }
+h1{
+  font-family: "Anton", sans-serif;
+}
+/* Banner Section */
+
+
+
 /* Auto scroll */
 .auto-scroll:hover > .auto-scroll-itms {
   cursor: pointer;
@@ -35,7 +47,7 @@ body {
   animation-delay: -12s;
 }
 
-@keyframes rightTOLeft {
+/* @keyframes rightTOLeft {
   0% {
     right: -5%;
   }
@@ -64,4 +76,16 @@ body {
       right: 100%;
     }
   }
+} */
+@media screen and (max-width: 400px) {
+  /* Header Section */
+  .nav-btn>a{
+    font-size: 26px;
+    padding: 16px;
+  }
+  /* Banner Section */
+.bnnr-right{
+  margin-top: -80px;
+}
+
 }
