@@ -9,5 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     html.classList.toggle("overflow-hidden");
     body.classList.toggle("overflow-hidden");
+    toggleBtn.classList.toggle("tilted")
   });
 });
