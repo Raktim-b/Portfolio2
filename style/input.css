@@ -10,15 +10,29 @@ body {
   overflow-x: hidden;
   font-family: "Geist", sans-serif;
 }
-h1{
+h1 {
   font-family: "Anton", sans-serif;
 }
 /* Banner Section */
 
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
 
 /* Auto scroll */
-.auto-scroll:hover > .auto-scroll-itms {
+/* .auto-scroll:hover > .auto-scroll-itms {
   cursor: pointer;
   animation-play-state: paused;
 }
@@ -45,7 +59,7 @@ h1{
 }
 .auto-scroll-itms:nth-child(7) {
   animation-delay: -12s;
-}
+} */
 
 /* @keyframes rightTOLeft {
   0% {
@@ -79,16 +93,15 @@ h1{
 } */
 @media screen and (max-width: 400px) {
   /* Header Section */
-  .navbar-collapsed{
+  .navbar-collapsed {
     width: 310px;
   }
-  .nav-btn>a{
+  .nav-btn > a {
     font-size: 26px;
     padding: 16px;
   }
   /* Banner Section */
-.bnnr-right{
-  margin-top: -80px;
-}
-
+  .bnnr-right {
+    margin-top: -80px;
+  }
 }
