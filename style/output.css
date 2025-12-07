@@ -658,6 +658,10 @@
     font-size: var(--text-4xl);
     line-height: calc(var(--spacing) * 7);
   }
+  .text-\[3px\]\/\[30px\] {
+    font-size: 3px;
+    line-height: 30px;
+  }
   .text-\[21px\]\/5 {
     font-size: 21px;
     line-height: calc(var(--spacing) * 5);
