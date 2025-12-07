@@ -10,7 +10,7 @@ body {
   overflow-x: hidden;
   font-family: "Geist", sans-serif;
 }
-h1 {
+h2 {
   font-family: "Anton", sans-serif;
 }
 
@@ -30,7 +30,7 @@ h1 {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-12px);
   }
   100% {
     transform: translateY(0);
@@ -181,6 +181,10 @@ h1 {
     }
   }
   /* About Section */
+  .title2::after{
+    left: 83%;
+    top: 62%;
+  }
   .about-cntn {
     font-size: 17px;
     line-height: 126%;
