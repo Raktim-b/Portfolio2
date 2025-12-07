@@ -10,7 +10,8 @@ body {
   overflow-x: hidden;
   font-family: "Geist", sans-serif;
 }
-h2 {
+h2,
+h3 {
   font-family: "Anton", sans-serif;
 }
 
@@ -182,12 +183,19 @@ h2 {
     }
   }
   /* About Section */
-  .title2::after{
+  .about-hdr > .title2::after {
     left: 83%;
     top: 62%;
   }
   .about-cntn {
     font-size: 17px;
     line-height: 126%;
+  }
+  /* Project Section */
+  .Project-hdr > .title2::after {
+    left: 94%;
+  }
+  .count {
+    left: 95%;
   }
 }

@@ -8,13 +8,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
-    <!-- Font Awsome Cdn -->
+    <!-- Swiper Css -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
     <!-- Tailwind Css -->
     <link href="./style/output.css" rel="stylesheet" />
@@ -89,7 +86,7 @@
                 class="px-6 md:px-3 lg:px-5 py-5 md:py-2 text-4xl md:text-sm lg:text-[16px] flex items-center backdrop-blur-[5px] bg-[linear-gradient(180deg,rgb(13,13,13)_-74%,rgba(255,255,255,0.1)_183%)] rounded-[120px] shadow-[rgba(0,0,0,0.68)_0px_-0.48175px_0.48175px_-1.25px_inset, rgba(0,0,0,0.596)_0px_-1.83083px_1.83083px_-2.5px_inset, rgba(0,0,0,0.235)_0px_-8px_8px_-3.75px_inset] opacity-100 font-semibold text-white group transition-all hover:text-[#ff4925] duration-500 ease-in-out"
                 >Download CV
                 <div
-                  class="arrow-wrpr rounded-full bg-[#ff4925] p-1 ml-1 lg:ml-3"
+                  class="arrow-wrpr rounded-full bg-[#ff4925] p-1 ml-1 lg:ml-3 opacity-80"
                 >
                   <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
                   <svg
@@ -243,7 +240,7 @@
       </section>
       <!-- Social Section -->
       <div
-        class="scl-sec fixed right-[15px] bottom-5 z-9999 bg-[#0f0f0f]/40 backdrop-blur-xl border border-white/10 px-[5px] py-2 rounded-2xl"
+        class="scl-sec fixed right-[15px] bottom-4 z-9999 bg-[#0f0f0f]/40 backdrop-blur-xl border border-white/10 px-[5px] py-2 rounded-2xl"
       >
         <ul class="list-none flex flex-col gap-3">
           <li>
@@ -271,7 +268,7 @@
                   <g
                     id="Dribbble-Light-Preview"
                     transform="translate(-140.000000, -7559.000000)"
-                    fill="#8f8f8f"
+                    fill="#cacaca"
                   >
                     <g id="icons" transform="translate(56.000000, 160.000000)">
                       <path
@@ -280,14 +277,15 @@
                       ></path>
                     </g>
                   </g>
-                </g></svg
-            ></a>
+                </g>
+              </svg>
+            </a>
           </li>
           <li>
             <a href="">
               <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
               <svg
-                fill="#8f8f8f"
+                fill="#cacaca"
                 width="26px"
                 height="26px"
                 viewBox="0 0 32 32"
@@ -305,7 +303,7 @@
 
               <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
               <svg
-                fill="#8f8f8f"
+                fill="#cacaca"
                 height="25px"
                 width="25px"
                 version="1.1"
@@ -553,21 +551,19 @@
         </div>
       </section>
       <!-- About Section -->
-      <section class="about-sec py-8 relative">
+      <section class="about-sec pt-8 pb-12 relative">
         <div
           class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_2px,transparent_1px)] bg-size-[112.5px_100%] sm:bg-size-[153.6px_100%] xl:bg-size-[288px_100%]"
         ></div>
         <div class="max-w-[1300px] mx-auto px-[15px] w-full relative z-10">
           <div class="about-hdr text-center mb-8">
             <h2
-              class="title2 text-[#cacaca] text-[80px] md:text-[100px] lg:text-[140px] relative uppercase after:content-[''] after:absolute after:z-20 after:w-5 after:h-5 lg:after:w-[30px] lg:after:h-[30px] after:bg-[#ff4925] after:top-[61%] md:after:top-[58%] lg:after:top-[64%] after:left-[73%] sm:after:left-[66%] xl:after:left-[64%]"
+              class="title2 text-[#cacaca] text-[80px] md:text-[100px] lg:text-[140px] relative uppercase after:content-[''] after:absolute after:z-20 after:w-5 after:h-5 lg:after:w-[30px] lg:after:h-[30px] after:bg-[#ff4925] after:top-[62%] md:after:top-[65%] lg:after:top-[64%] after:left-[73%] sm:after:left-[66%] xl:after:left-[64%]"
             >
               About
             </h2>
           </div>
-          <div
-            class="mx-[-15px] flex flex-col-reverse md:flex-row flex-wrap im"
-          >
+          <div class="mx-[-15px] flex flex-col-reverse md:flex-row flex-wrap">
             <div class="col-7 w-full md:w-[60%] px-[15px]">
               <div class="about-small-hdr">
                 <div
@@ -625,6 +621,890 @@
         </div>
       </section>
       <!-- Project Section -->
+      <section class="project-sec py-8 relative border-y border-[#ffffff22]">
+        <div
+          class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_2px,transparent_1px)] bg-size-[112.5px_100%] sm:bg-size-[153.6px_100%] xl:bg-size-[288px_100%]"
+        ></div>
+
+        <div class="max-w-[1300px] mx-auto px-[15px] w-full relative z-10">
+          <div class="Project-hdr text-center mb-5">
+            <h2
+              class="title2 text-[#cacaca] text-[80px] md:text-[100px] lg:text-[140px] relative uppercase after:content-[''] after:absolute after:z-20 after:w-5 after:h-5 lg:after:w-[30px] lg:after:h-[30px] after:bg-[#ff4925] after:top-[62%] md:after:top-[65%] lg:after:top-[64%] after:left-[81%] sm:after:left-[70%] md:after:left-[71%] lg:after:left-[73%] xl:after:left-[68%]"
+            >
+              Project
+              <div
+                class="count text-[#ff4925] absolute top-1/7 left-[82%] sm:left-[73%] xl:left-[68%] text-lg"
+              >
+                (11)
+              </div>
+            </h2>
+          </div>
+          <div class="about-small-hdr">
+            <div
+              class="title2 flex gap-2 items-center relative z-20 text-[#cacaca] uppercase font-bold"
+            >
+              <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+              <svg
+                width="15px"
+                height="15px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM12.5 5.5C13.0523 5.5 13.5 5.94772 13.5 6.5V10.5H17.5C18.0523 10.5 18.5 10.9477 18.5 11.5V12.5C18.5 13.0523 18.0523 13.5 17.5 13.5H13.5V17.5C13.5 18.0523 13.0523 18.5 12.5 18.5H11.5C10.9477 18.5 10.5 18.0523 10.5 17.5V13.5H6.5C5.94772 13.5 5.5 13.0523 5.5 12.5V11.5C5.5 10.9477 5.94772 10.5 6.5 10.5H10.5V6.5C10.5 5.94772 10.9477 5.5 11.5 5.5H12.5Z"
+                  fill="#ff4925"
+                />
+              </svg>
+              My Works.
+            </div>
+          </div>
+          <p
+            class="text-[#cacaca] text-[25px]/[120%] lg:text-[34px]/[115%] xl:text-[45px]/[115%] tracking-tighter font-bold mt-3 lg:mt-5 mb-6 md:mb-20"
+          >
+            A glimpse into the work I love to build.
+          </p>
+          <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="pro-wrpr">
+                  <div
+                    class="pro-top flex items-center justify-between bg-[#0f0f0f] rounded-2xl border-3 py-1.5 lg:py-2.5 px-3.5 border-[#ffffff22] mb-1.5"
+                  >
+                    <h3
+                      class="text-3xl lg:text-4xl text-[#f2ff00] tracking-wide"
+                    >
+                      FITIN
+                    </h3>
+
+                    <a
+                      href=""
+                      class="p-1 lg:p-2 bg-[#ff4925] rounded-full opacity-80 group"
+                    >
+                      <svg
+                        width="30px"
+                        height="30px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="group-hover:rotate-360 transition-all duration-500 ease-in-out"
+                      >
+                        <path
+                          d="M7 17L17 7M17 7H8M17 7V16"
+                          stroke="#fff"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div
+                    class="project-img max-w-full h-[300px] lg:h-[360px] xl:h-[400px] overflow-hidden rounded-2xl"
+                  >
+                    <img
+                      src="./assets/Project-img1.png"
+                      alt=""
+                      class="w-full h-full object-cover rounded-2xl hover:transform hover:scale-110 transition duration-500 ease-in-out"
+                    />
+                  </div>
+                  <div class="pro-bottom py-2.5 mt-1.5">
+                    <ul
+                      class="skills list-none flex gap-2 flex-wrap items-center mb-3.5"
+                    >
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        HTMLS
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        CSS
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        JavaScript
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        Bootstrap
+                      </li>
+                    </ul>
+                    <p
+                      class="text-sm/5 font-bold tracking-tight text-[#cacaca]"
+                    >
+                      A modern fitness website with bold visuals and smooth UI
+                      interactions. Designed for showcasing programs, trainers,
+                      and membership features.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pro-wrpr">
+                  <div
+                    class="pro-top flex items-center justify-between bg-[#0f0f0f] rounded-2xl border-3 py-1.5 lg:py-2.5 px-3.5 border-[#ffffff22] mb-1.5"
+                  >
+                    <h3
+                      class="text-3xl lg:text-4xl text-[#01ade5] tracking-wide"
+                    >
+                      NFTX
+                    </h3>
+
+                    <a
+                      href=""
+                      class="p-1 lg:p-2 bg-[#ff4925] rounded-full opacity-80 group"
+                    >
+                      <svg
+                        width="30px"
+                        height="30px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="group-hover:rotate-360 transition-all duration-500 ease-in-out"
+                      >
+                        <path
+                          d="M7 17L17 7M17 7H8M17 7V16"
+                          stroke="#fff"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div
+                    class="project-img max-w-full h-[300px] lg:h-[360px] xl:h-[400px] overflow-hidden rounded-2xl"
+                  >
+                    <img
+                      src="./assets/Project-img2.png"
+                      alt=""
+                      class="w-full h-full object-cover rounded-2xl hover:transform hover:scale-110 transition duration-500 ease-in-out"
+                    />
+                  </div>
+                  <div class="pro-bottom py-2.5 mt-1.5">
+                    <ul
+                      class="skills list-none flex gap-2 flex-wrap items-center mb-3.5"
+                    >
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        HTMLS
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        CSS
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        JavaScript
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        Bootstrap
+                      </li>
+                    </ul>
+                    <p
+                      class="text-sm/5 font-bold tracking-tight text-[#cacaca]"
+                    >
+                      A modern NFT landing page built with responsive layouts
+                      and bold visual design. Designed to highlight digital art
+                      collections, artist stats, and marketplace features.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pro-wrpr">
+                  <div
+                    class="pro-top flex items-center justify-between bg-[#0f0f0f] rounded-2xl border-3 py-1.5 lg:py-2.5 px-3.5 border-[#ffffff22] mb-1.5"
+                  >
+                    <h3
+                      class="text-3xl lg:text-4xl text-[#c0a483] font-extralight tracking-wide"
+                    >
+                      WINEVERSE
+                    </h3>
+
+                    <a
+                      href=""
+                      class="p-1 lg:p-2 bg-[#ff4925] rounded-full opacity-80 group"
+                    >
+                      <svg
+                        width="30px"
+                        height="30px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="group-hover:rotate-360 transition-all duration-500 ease-in-out"
+                      >
+                        <path
+                          d="M7 17L17 7M17 7H8M17 7V16"
+                          stroke="#fff"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div
+                    class="project-img max-w-full h-[300px] lg:h-[360px] xl:h-[400px] overflow-hidden rounded-2xl"
+                  >
+                    <img
+                      src="./assets/Project-img3.png"
+                      alt=""
+                      class="w-full h-full object-cover rounded-2xl hover:transform hover:scale-110 transition duration-500 ease-in-out"
+                    />
+                  </div>
+                  <div class="pro-bottom py-2.5 mt-1.5">
+                    <ul class="skills list-none flex gap-2 items-center mb-3.5">
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        HTMLS
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        CSS
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        JavaScript
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        Bootstrap
+                      </li>
+                    </ul>
+                    <p
+                      class="text-sm/5 font-bold tracking-tight text-[#cacaca]"
+                    >
+                      A stylish wine landing page blending luxury visuals with
+                      soft, modern UI elements. Created to deliver a smooth,
+                      immersive experience for wine lovers and buyers.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pro-wrpr">
+                  <div
+                    class="pro-top flex items-center justify-between bg-[#0f0f0f] rounded-2xl border-3 py-1.5 lg:py-2.5 px-3.5 border-[#ffffff22] mb-1.5"
+                  >
+                    <h3
+                      class="text-3xl lg:text-4xl text-[#08d665] font-semibold tracking-wide"
+                    >
+                      PORTFOLIO
+                    </h3>
+
+                    <a
+                      href=""
+                      class="p-1 lg:p-2 bg-[#ff4925] rounded-full opacity-80 group"
+                    >
+                      <svg
+                        width="30px"
+                        height="30px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="group-hover:rotate-360 transition-all duration-500 ease-in-out"
+                      >
+                        <path
+                          d="M7 17L17 7M17 7H8M17 7V16"
+                          stroke="#fff"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div
+                    class="project-img max-w-full h-[300px] lg:h-[360px] xl:h-[400px] overflow-hidden rounded-2xl"
+                  >
+                    <img
+                      src="./assets/Project-img4.png"
+                      alt=""
+                      class="w-full h-full object-cover rounded-2xl hover:transform hover:scale-110 transition duration-500 ease-in-out"
+                    />
+                  </div>
+                  <div class="pro-bottom py-2.5 mt-1.5">
+                    <ul class="skills list-none flex gap-2 items-center mb-3.5">
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        HTMLS
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        CSS
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        JavaScript
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        Bootstrap
+                      </li>
+                    </ul>
+                    <p
+                      class="text-sm/5 font-bold tracking-tight text-[#cacaca]"
+                    >
+                      A clean and modern developer intro page featuring bold
+                      text and polished visuals. Designed to showcase
+                      personality, expertise, and social presence in a single
+                      view.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pro-wrpr">
+                  <div
+                    class="pro-top flex items-center justify-between bg-[#0f0f0f] rounded-2xl border-3 py-1.5 lg:py-2.5 px-3.5 border-[#ffffff22] mb-1.5"
+                  >
+                    <h3 class="text-3xl lg:text-4xl text-white tracking-wider">
+                      CABINETMARK LLC
+                    </h3>
+
+                    <a
+                      href=""
+                      class="p-1 lg:p-2 bg-[#ff4925] rounded-full opacity-80 group"
+                    >
+                      <svg
+                        width="30px"
+                        height="30px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="group-hover:rotate-360 transition-all duration-500 ease-in-out"
+                      >
+                        <path
+                          d="M7 17L17 7M17 7H8M17 7V16"
+                          stroke="#fff"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div
+                    class="project-img max-w-full h-[300px] lg:h-[360px] xl:h-[400px] overflow-hidden rounded-2xl"
+                  >
+                    <img
+                      src="./assets/Project-img5.png"
+                      alt=""
+                      class="w-full h-full object-cover rounded-2xl hover:transform hover:scale-110 transition duration-500 ease-in-out"
+                    />
+                  </div>
+                  <div class="pro-bottom py-2.5 mt-1.5">
+                    <ul class="skills list-none flex gap-2 items-center mb-3.5">
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        HTMLS
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        CSS
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        JavaScript
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        Bootstrap
+                      </li>
+                    </ul>
+                    <p
+                      class="text-sm/5 font-bold tracking-tight text-[#cacaca]"
+                    >
+                      A stylish home-interior website built with a polished
+                      modern layout. Designed to present cabinetry, doors, and
+                      luxury home elements with elegance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pro-wrpr">
+                  <div
+                    class="pro-top flex items-center justify-between bg-[#0f0f0f] rounded-2xl border-3 py-1.5 lg:py-2.5 px-3.5 border-[#ffffff22] mb-1.5"
+                  >
+                    <h3
+                      class="text-3xl lg:text-4xl text-[#3f543e] font-extralight tracking-wide"
+                    >
+                      UPTRA
+                    </h3>
+
+                    <a
+                      href=""
+                      class="p-1 lg:p-2 bg-[#ff4925] rounded-full opacity-80 group"
+                    >
+                      <svg
+                        width="30px"
+                        height="30px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="group-hover:rotate-360 transition-all duration-500 ease-in-out"
+                      >
+                        <path
+                          d="M7 17L17 7M17 7H8M17 7V16"
+                          stroke="#fff"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div
+                    class="project-img max-w-full h-[300px] lg:h-[360px] xl:h-[400px] overflow-hidden rounded-2xl"
+                  >
+                    <img
+                      src="./assets/Project-img6.png"
+                      alt=""
+                      class="w-full h-full object-cover rounded-2xl hover:transform hover:scale-110 transition duration-500 ease-in-out"
+                    />
+                  </div>
+                  <div class="pro-bottom py-2.5 mt-1.5">
+                    <ul class="skills list-none flex gap-2 items-center mb-3.5">
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        HTMLS
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        CSS
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        JavaScript
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        Bootstrap
+                      </li>
+                    </ul>
+                    <p
+                      class="text-sm/5 font-bold tracking-tight text-[#cacaca]"
+                    >
+                      A sleek job-posting interface crafted with a calming,
+                      modern aesthetic. Created to showcase projects, connect
+                      freelancers, and streamline hiring.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pro-wrpr">
+                  <div
+                    class="pro-top flex items-center justify-between bg-[#0f0f0f] rounded-2xl border-3 py-1.5 lg:py-2.5 px-3.5 border-[#ffffff22] mb-1.5"
+                  >
+                    <h3
+                      class="text-3xl lg:text-4xl text-[#3D45B8] font-extralight tracking-wide"
+                    >
+                      BEACON ONE
+                    </h3>
+
+                    <a
+                      href=""
+                      class="p-1 lg:p-2 bg-[#ff4925] rounded-full opacity-80 group"
+                    >
+                      <svg
+                        width="30px"
+                        height="30px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="group-hover:rotate-360 transition-all duration-500 ease-in-out"
+                      >
+                        <path
+                          d="M7 17L17 7M17 7H8M17 7V16"
+                          stroke="#fff"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div
+                    class="project-img max-w-full h-[300px] lg:h-[360px] xl:h-[400px] overflow-hidden rounded-2xl"
+                  >
+                    <img
+                      src="./assets/Project-img7.png"
+                      alt=""
+                      class="w-full h-full object-cover rounded-2xl hover:transform hover:scale-110 transition duration-500 ease-in-out"
+                    />
+                  </div>
+                  <div class="pro-bottom py-2.5 mt-1.5">
+                    <ul class="skills list-none flex gap-2 items-center mb-3.5">
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        HTMLS
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        CSS
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        JavaScript
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        Bootstrap
+                      </li>
+                    </ul>
+                    <p
+                      class="text-sm/5 font-bold tracking-tight text-[#cacaca]"
+                    >
+                      A polished investment platform UI crafted to showcase
+                      opportunities and company vision. Built with a clean
+                      layout that highlights strategy, growth, and community
+                      impact.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pro-wrpr">
+                  <div
+                    class="pro-top flex items-center justify-between bg-[#0f0f0f] rounded-2xl border-3 py-1.5 lg:py-2.5 px-3.5 border-[#ffffff22] mb-1.5"
+                  >
+                    <h3
+                      class="text-3xl lg:text-4xl text-[#d00000] font-extralight tracking-wide"
+                    >
+                      EVERETTS
+                    </h3>
+
+                    <a
+                      href=""
+                      class="p-1 lg:p-2 bg-[#ff4925] rounded-full opacity-80 group"
+                    >
+                      <svg
+                        width="30px"
+                        height="30px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="group-hover:rotate-360 transition-all duration-500 ease-in-out"
+                      >
+                        <path
+                          d="M7 17L17 7M17 7H8M17 7V16"
+                          stroke="#fff"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div
+                    class="project-img max-w-full h-[300px] lg:h-[360px] xl:h-[400px] overflow-hidden rounded-2xl"
+                  >
+                    <img
+                      src="./assets/Project-img8.png"
+                      alt=""
+                      class="w-full h-full object-cover rounded-2xl hover:transform hover:scale-110 transition duration-500 ease-in-out"
+                    />
+                  </div>
+                  <div class="pro-bottom py-2.5 mt-1.5">
+                    <ul class="skills list-none flex gap-2 items-center mb-3.5">
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        HTMLS
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        CSS
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        JavaScript
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        Bootstrap
+                      </li>
+                    </ul>
+                    <p
+                      class="text-sm/5 font-bold tracking-tight text-[#cacaca]"
+                    >
+                      A polished financial service website offering personalized
+                      loan solutions. Created with a user-centric interface for
+                      quick inquiries, applications, and guidance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pro-wrpr">
+                  <div
+                    class="pro-top flex items-center justify-between bg-[#0f0f0f] rounded-2xl border-3 py-1.5 lg:py-2.5 px-3.5 border-[#ffffff22] mb-1.5"
+                  >
+                    <h3
+                      class="text-3xl lg:text-4xl text-[#4caf4f] font-extralight tracking-wide"
+                    >
+                      NEXCENT
+                    </h3>
+
+                    <a
+                      href=""
+                      class="p-1 lg:p-2 bg-[#ff4925] rounded-full opacity-80 group"
+                    >
+                      <svg
+                        width="30px"
+                        height="30px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="group-hover:rotate-360 transition-all duration-500 ease-in-out"
+                      >
+                        <path
+                          d="M7 17L17 7M17 7H8M17 7V16"
+                          stroke="#fff"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div
+                    class="project-img max-w-full h-[300px] lg:h-[360px] xl:h-[400px] overflow-hidden rounded-2xl"
+                  >
+                    <img
+                      src="./assets/Project-img9.png"
+                      alt=""
+                      class="w-full h-full object-cover rounded-2xl hover:transform hover:scale-110 transition duration-500 ease-in-out"
+                    />
+                  </div>
+                  <div class="pro-bottom py-2.5 mt-1.5">
+                    <ul class="skills list-none flex gap-2 items-center mb-3.5">
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        HTMLS
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        CSS
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        JavaScript
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        Bootstrap
+                      </li>
+                    </ul>
+                    <p
+                      class="text-sm/5 font-bold tracking-tight text-[#cacaca]"
+                    >
+                      A lightweight, user-friendly landing page emphasizing
+                      experience-driven insights. Built with modern
+                      illustrations and a structured layout to improve user
+                      engagement.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pro-wrpr">
+                  <div
+                    class="pro-top flex items-center justify-between bg-[#0f0f0f] rounded-2xl border-3 py-1.5 lg:py-2.5 px-3.5 border-[#ffffff22] mb-1.5"
+                  >
+                    <h3
+                      class="text-3xl lg:text-4xl text-[#cacaca] font-extralight tracking-wide"
+                    >
+                      SHOP.CO
+                    </h3>
+
+                    <a
+                      href=""
+                      class="p-1 lg:p-2 bg-[#ff4925] rounded-full opacity-80 group"
+                    >
+                      <svg
+                        width="30px"
+                        height="30px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="group-hover:rotate-360 transition-all duration-500 ease-in-out"
+                      >
+                        <path
+                          d="M7 17L17 7M17 7H8M17 7V16"
+                          stroke="#fff"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div
+                    class="project-img max-w-full h-[300px] lg:h-[360px] xl:h-[400px] overflow-hidden rounded-2xl"
+                  >
+                    <img
+                      src="./assets/Project-img10.png"
+                      alt=""
+                      class="w-full h-full object-cover rounded-2xl hover:transform hover:scale-110 transition duration-500 ease-in-out"
+                    />
+                  </div>
+                  <div class="pro-bottom py-2.5 mt-1.5">
+                    <ul class="skills list-none flex gap-2 items-center mb-3.5">
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        HTMLS
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        CSS
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        JavaScript
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        Bootstrap
+                      </li>
+                    </ul>
+                    <p
+                      class="text-sm/5 font-bold tracking-tight text-[#cacaca]"
+                    >
+                      A modern online shopping interface showcasing premium
+                      apparel collections. Created with a user-friendly layout,
+                      strong visuals, and seamless browsing experience.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pro-wrpr">
+                  <div
+                    class="pro-top flex items-center justify-between bg-[#0f0f0f] rounded-2xl border-3 py-1.5 lg:py-2.5 px-3.5 border-[#ffffff22] mb-1.5"
+                  >
+                    <h3
+                      class="text-3xl lg:text-4xl text-[#30a8de] font-extralight tracking-wide"
+                    >
+                      LUNG+ALLERGY
+                    </h3>
+
+                    <a
+                      href=""
+                      class="p-1 lg:p-2 bg-[#ff4925] rounded-full opacity-80 group"
+                    >
+                      <svg
+                        width="30px"
+                        height="30px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="group-hover:rotate-360 transition-all duration-500 ease-in-out"
+                      >
+                        <path
+                          d="M7 17L17 7M17 7H8M17 7V16"
+                          stroke="#fff"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  <div
+                    class="project-img max-w-full h-[300px] lg:h-[360px] xl:h-[400px] overflow-hidden rounded-2xl"
+                  >
+                    <img
+                      src="./assets/Project-img11.png"
+                      alt=""
+                      class="w-full h-full object-cover rounded-2xl hover:transform hover:scale-110 transition duration-500 ease-in-out"
+                    />
+                  </div>
+                  <div class="pro-bottom py-2.5 mt-1.5">
+                    <ul class="skills list-none flex gap-2 items-center mb-3.5">
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        HTMLS
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        CSS
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        JavaScript
+                      </li>
+                      <li
+                        class="text-[#8f8f8f] text-[12px] bg-[linear-gradient(to_bottom,#282626_0%,rgba(255,255,255,0.05)_100%)] rounded-xl px-5 py-1 font-bold"
+                      >
+                        Bootstrap
+                      </li>
+                    </ul>
+                    <p
+                      class="text-sm/5 font-bold tracking-tight text-[#cacaca]"
+                    >
+                      A modern healthcare landing page designed for lung and
+                      allergy specialists. Built with a clean, calming blue
+                      theme to promote trust, clarity, and easy patient
+                      navigation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Swiper Js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
