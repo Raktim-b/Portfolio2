@@ -16,12 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
     slidesPerView: 1,
     spaceBetween: 20,
 
-    speed: 3000,
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true,
-    },
+    // speed: 3000,
+    // autoplay: {
+    //   delay: 0,
+    //   disableOnInteraction: false,
+    //   pauseOnMouseEnter: true,
+    // },
     breakpoints: {
       // when window width is >= 640px
       640: {
@@ -30,4 +30,5 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     },
   });
+ 
 });

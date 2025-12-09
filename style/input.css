@@ -11,7 +11,8 @@ body {
   font-family: "Geist", sans-serif;
 }
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Anton", sans-serif;
 }
 
@@ -24,6 +25,7 @@ h3 {
   transition: all 0.3s ease-in-out;
   transform: rotate(-45deg) translate(-4px, -6px);
 }
+
 /* Banner Section */
 
 @keyframes float {
@@ -84,7 +86,23 @@ h3 {
 .auto-scroll-itms:nth-child(8) {
   animation-delay: -14s;
 }
-/* About Section */
+/* Project Section */
+.mySwiper {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 90%,
+    transparent
+  );
+}
 
 @keyframes rightTOLeft {
   0% {
@@ -160,6 +178,9 @@ h3 {
   }
 }
 @media screen and (max-width: 400px) {
+  .title4{
+    font-size: 30px;
+  }
   /* Header Section */
   .navbar-collapsed {
     width: 310px;
