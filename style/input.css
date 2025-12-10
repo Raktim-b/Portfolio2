@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
 @import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
 :root {
   --animate-pulse: pulse 2s cubic-bezier(1, -0.1, 0, 1.21) infinite;
 }
@@ -103,7 +105,6 @@ h4 {
     transparent
   );
 }
-
 @keyframes rightTOLeft {
   0% {
     right: -4%;
@@ -178,7 +179,7 @@ h4 {
   }
 }
 @media screen and (max-width: 400px) {
-  .title4{
+  .title4 {
     font-size: 30px;
   }
   /* Header Section */
@@ -218,5 +219,14 @@ h4 {
   }
   .count {
     left: 95%;
+  }
+  /* Service Section */
+  .service-hdr > .title2::after {
+    left: 94%;
+    top: 63%;
+  }
+  /* F&Q Section */
+  .fq-hdr > .title2::after {
+    left: 71%;
   }
 }
