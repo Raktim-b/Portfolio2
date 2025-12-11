@@ -18,9 +18,7 @@
   </head>
   <body class="overflow-x-hidden bg-[#0f0f0f]">
     <!-- Header Section -->
-    <header
-      class="pt-4 pb-2 sm:pt-3 border-b border-[#FFFFFF26] fixed z-20 left-0 right-0 bg-[#0f0f0f]"
-    >
+    <header class="pt-4 pb-2 sm:pt-3 border-b border-[#FFFFFF26] bg-[#0f0f0f]">
       <div class="max-w-[1500px] mx-auto px-[15px]">
         <nav class="flex items-center">
           <div class="nav-logo max-w-[140px]">
@@ -68,7 +66,7 @@
                   href=""
                   class="nav-links relative before:content-['04'] before:absolute before:left-[105%] befor:top-0 before:text-white before:text-[12px] group-hover:before:text-[#ff4925]"
                 >
-                  Blog</a
+                  Service</a
                 >
               </li>
               <li class="mr-0 md:mr-[30px] group lg:mr-[45px]">
@@ -83,7 +81,7 @@
             <div class="nav-btn mt-8 md:mt-0">
               <a
                 href=""
-                class="px-6 md:px-3 lg:px-5 py-5 md:py-2 text-4xl md:text-sm lg:text-[16px] flex items-center backdrop-blur-[5px] bg-[linear-gradient(180deg,rgb(13,13,13)_-74%,rgba(255,255,255,0.1)_183%)] rounded-[120px] shadow-[rgba(0,0,0,0.68)_0px_-0.48175px_0.48175px_-1.25px_inset, rgba(0,0,0,0.596)_0px_-1.83083px_1.83083px_-2.5px_inset, rgba(0,0,0,0.235)_0px_-8px_8px_-3.75px_inset] opacity-100 font-semibold text-white group transition-all hover:text-[#ff4925] duration-500 ease-in-out"
+                class="px-6 md:px-3 flex! lg:px-5 py-5 md:py-2 text-4xl md:text-sm lg:text-[16px] items-center backdrop-blur-[5px] bg-[linear-gradient(180deg,rgb(13,13,13)_-74%,rgba(255,255,255,0.1)_183%)] rounded-[120px] shadow-[rgba(0,0,0,0.68)_0px_-0.48175px_0.48175px_-1.25px_inset, rgba(0,0,0,0.596)_0px_-1.83083px_1.83083px_-2.5px_inset, rgba(0,0,0,0.235)_0px_-8px_8px_-3.75px_inset] opacity-100 font-semibold text-white group transition-all hover:text-[#ff4925] duration-500 ease-in-out"
                 >Download CV
                 <div
                   class="arrow-wrpr rounded-full bg-[#ff4925] p-1 ml-1 lg:ml-3 opacity-80"
@@ -127,7 +125,7 @@
     <main>
       <!-- Banner Section -->
       <section
-        class="banner-sec relative z-0 pt-[100px] lg:pt-[120px] bg-[#0f0f0f] overflow-hidden"
+        class="banner-sec relative z-0 pt-8 lg:pt-12 bg-[#0f0f0f] overflow-hidden"
       >
         <!-- Background Stripes Layer -->
         <div
@@ -1882,10 +1880,13 @@
       </section>
       <!-- Contact Section -->
       <section
-        class="contact-sec py-8 sm:py-16 relative border-b border-[#ffffff22]"
+        class="contact-sec py-8 sm:py-16 relative z-0 border-b border-[#ffffff22]"
       >
         <div
           class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_2px,transparent_1px)] bg-size-[112.5px_100%] sm:bg-size-[153.6px_100%] xl:bg-size-[288px_100%]"
+        ></div>
+        <div
+          class="absolute bottom-0 left-0 right-0 h-[600px] -z-10 pointer-events-none bg-[linear-gradient(0deg,rgba(15,15,15,1)_0%,rgba(15,15,15,0)_100%)]"
         ></div>
 
         <div class="max-w-[1300px] mx-auto px-[15px]">
@@ -2005,6 +2006,113 @@
         </div>
       </section>
     </main>
+    <footer class="footer-sec pt-8 md:pt-14">
+      <div class="max-w-[1300px] mx-auto px-[15px] w-full">
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-10">
+          <div class="left flex items-center gap-24">
+            <div class="left-list">
+              <h5 class="uppercase text-[#cacaca] font-bold tracking-tighter">
+                Navigate
+              </h5>
+              <ul class="list-none mt-6 [&_li]:mb-2 hover:text-[#ff4925]">
+                <li>
+                  <a
+                    href=""
+                    class="ftr-link text-[#8f8f8f] font-semibold text-[22px] tracking-tighter hover:text-[#ff4925]"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="ftr-link text-[#8f8f8f] font-semibold text-[22px] tracking-tighter hover:text-[#ff4925]"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="ftr-link text-[#8f8f8f] font-semibold text-[22px] tracking-tighter hover:text-[#ff4925]"
+                    >Works</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="ftr-link text-[#8f8f8f] font-semibold text-[22px] tracking-tighter hover:text-[#ff4925]"
+                    >Service</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="right-list">
+              <h5 class="uppercase text-[#cacaca] font-bold tracking-tighter">
+                SOCIAL
+              </h5>
+              <ul class="list-none mt-6 [&_li]:mb-2 hover:text-[#ff4925]">
+                <li>
+                  <a
+                    href=""
+                    class="ftr-link text-[#8f8f8f] font-semibold text-[22px] tracking-tighter hover:text-[#ff4925]"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="ftr-link text-[#8f8f8f] font-semibold text-[22px] tracking-tighter hover:text-[#ff4925]"
+                    >Github</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="ftr-link text-[#8f8f8f] font-semibold text-[22px] tracking-tighter hover:text-[#ff4925]"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="ftr-link text-[#8f8f8f] font-semibold text-[22px] tracking-tighter hover:text-[#ff4925]"
+                    >Facebook</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="right ml-auto md:ml-0 mt-5 md:mt-0">
+            <div
+              class="ftr-right-cntn max-w-[350px] text-xl/6 sm:text-[24px] lg:text-[28px]/8 text-[#cacaca] font-bold tracking-tight uppercase"
+            >
+              I WOULD LOVE TO HEAR MORE FROM YOU AND
+              <span class="text-[#555]">LEARN ABOUT YOUR NEXT BIG IDEA!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ftr-btm py-10 bg-[#ff4925] rounded-t-2xl">
+        <div class="max-w-[1300px] mx-auto px-[15px] w-full">
+          <div class="flex justify-between  flex-col md:flex-row items-start md:items-center">
+            <div class="ftr-logo max-w-[500px]">
+              <img
+                src="./assets/Footer-logo.jpg"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="ftr-cntn-right max-w-[220px] ml-auto relative z-20">
+              <p
+                class="text-4xl/7 md:text-[45px]/10 lg:text-[56px]/12 text-[#0f0f0f] mt-5 md:mt-0 font-bold tracking-tighter"
+              >
+                Design Driven. Built for Impact.
+              </p>
+            </div>
+          </div>
+          <div class="copyright mt-2  text-[#0f0f0f] font-semibold">© 2025 <a href="">Raktim</a> All Rights Reserved , Inc.</div>
+        </div>
+      </div>
+    </footer>
     <!-- Swiper Js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <!-- Flowbite Js -->
