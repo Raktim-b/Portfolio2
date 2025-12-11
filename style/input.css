@@ -12,6 +12,7 @@ body {
   overflow-x: hidden;
   font-family: "Geist", sans-serif;
 }
+
 a{
   display: inline-block;
 }
@@ -159,6 +160,7 @@ h4 {
     }
   }
 }
+
 @media screen and (max-width: 768px) {
   @keyframes rightTOLeft {
     0% {
