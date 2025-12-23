@@ -22,7 +22,19 @@ h3,
 h4 {
   font-family: "Anton", sans-serif;
 }
-
+/* Cursor */
+.cursor {
+  mix-blend-mode: difference;
+  height: 20px;
+  width: 20px;
+  cursor: none;
+  border-radius: 50%;
+  background: #cacaca;
+  opacity: 0.8;
+  backdrop-filter: 30px;
+  position: fixed;
+  z-index: 9999;
+}
 /* Header Section */
 #toggler-btn.tilted .toggle-line1 {
   transition: all 0.3s ease-in-out;
@@ -93,6 +105,48 @@ h4 {
 .auto-scroll-itms:nth-child(8) {
   animation-delay: -14s;
 }
+.auto-scroll2 {
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 11%,
+    rgb(0, 0, 0) 23.5%,
+    rgb(0, 0, 0) 36.5%,
+    rgba(0, 0, 0, 0) 68%
+  );
+  margin-top: -50px;
+  margin-left: -60px;
+  margin-bottom: 100px;
+}
+
+.auto-scroll-itms2 {
+  animation: rightTOLeft2 12s linear infinite;
+}
+.auto-scroll-itms2:nth-child(1) {
+  animation-delay: -0s;
+}
+.auto-scroll-itms2:nth-child(2) {
+  animation-delay: -2s;
+}
+.auto-scroll-itms2:nth-child(3) {
+  animation-delay: -4s;
+}
+.auto-scroll-itms2:nth-child(4) {
+  animation-delay: -6s;
+}
+.auto-scroll-itms2:nth-child(5) {
+  animation-delay: -8s;
+}
+.auto-scroll-itms2:nth-child(6) {
+  animation-delay: -10s;
+}
+/* About Section */
+.about-sec{
+  padding-bottom: 120px;
+}
+.parallax-img {
+  will-change: transform;
+}
+
 /* Project Section */
 .mySwiper {
   mask-image: linear-gradient(
@@ -118,6 +172,21 @@ h4 {
     right: 100%;
   }
 }
+@keyframes rightTOLeft2 {
+  0% {
+    right: -4%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+/* Service Section */
+.service-sec{
+  padding: 45px 0 450px;
+}
+.parallax-card-img{
+  margin-top: -350px;
+}
 @media screen and (max-width: 1400px) {
   @keyframes rightTOLeft {
     0% {
@@ -128,8 +197,28 @@ h4 {
       right: 100%;
     }
   }
+  @keyframes rightTOLeft2 {
+    0% {
+      right: -20%;
+    }
+
+    100% {
+      right: 100%;
+    }
+  }
 }
 @media screen and (max-width: 1024px) {
+  .auto-scroll2 {
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 11%,
+      rgb(0, 0, 0) 23.5%,
+      rgb(0, 0, 0) 36.5%,
+      rgba(0, 0, 0, 0) 68%
+    );
+    margin-top: -134px;
+    margin-left: -30px;
+  }
   @keyframes rightTOLeft {
     0% {
       right: -16%;
@@ -139,8 +228,27 @@ h4 {
       right: 100%;
     }
   }
+  @keyframes rightTOLeft2 {
+    0% {
+      right: -16%;
+    }
+
+    100% {
+      right: 100%;
+    }
+  }
+  /* Service Section */
+  .service-sec{
+  padding: 45px 0 ;
+}
+.parallax-card-img{
+  margin-top: 0px;
+}
 }
 @media screen and (max-width: 992px) {
+  .nav-collapsed > li {
+    margin-right: 23px;
+  }
   /* Auto Scroll Section */
   .auto-scroll {
     mask-image: linear-gradient(
@@ -151,7 +259,21 @@ h4 {
       rgba(0, 0, 0, 0) 93%
     );
   }
+  .auto-scroll2 {
+    margin-top: -40px;
+    margin-left: -1px;
+    margin-bottom: 25px;
+  }
   @keyframes rightTOLeft {
+    0% {
+      right: -50%;
+    }
+
+    100% {
+      right: 100%;
+    }
+  }
+  @keyframes rightTOLeft2 {
     0% {
       right: -50%;
     }
@@ -172,11 +294,35 @@ h4 {
       right: 100%;
     }
   }
+  @keyframes rightTOLeft2 {
+    0% {
+      right: -86%;
+    }
+
+    100% {
+      right: 100%;
+    }
+  }
 }
 @media screen and (max-width: 640px) {
+  .auto-scroll2 {
+    margin-top: -40px;
+    margin-left: -1px;
+    margin-bottom: 5px;
+  }
+
   @keyframes rightTOLeft {
     0% {
       right: -100%;
+    }
+
+    100% {
+      right: 100%;
+    }
+  }
+  @keyframes rightTOLeft2 {
+    0% {
+      right: -35%;
     }
 
     100% {

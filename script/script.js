@@ -1,45 +1,42 @@
 document.addEventListener("DOMContentLoaded", () => {
   AOS.init();
-  let luxyEnabled = false;
+  // Initialize Lenis
+  const lenis = new Lenis({
+    duration: 2,
 
-  function enableLuxy() {
-    if (!luxyEnabled) {
-      luxy.init({
-        wrapper: "#luxy",
-        targets: ".luxy-el",
-        wrapperSpeed: 0.08,
+    autoRaf: true,
+  });
+    if (window.innerWidth < 1024) {
+    lenis.destroy();
+  }
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  const parallaxImg = document.querySelector(".parallax-img");
+
+  if (parallaxImg) {
+    lenis.on("scroll", ({ scroll }) => {
+      const speed = 0.1; // adjust parallax strength
+      parallaxImg.style.transform = `translateY(${scroll * speed}px)`;
+    });
+  }
+  const parallaxCards = document.querySelectorAll(".parallax-card-img");
+
+  if (parallaxCards) {
+    lenis.on("scroll", ({ scroll }) => {
+      const speed = 0.13; // tweak this
+
+      parallaxCards.forEach((card) => {
+        card.style.transform = `translateY(${
+          scroll * speed
+        }px)`;
       });
-      luxyEnabled = true;
-      console.log("Luxy Enabled");
-    }
+    });
   }
 
-  function disableLuxy() {
-    if (luxyEnabled) {
-      luxy.destroy(); // turns off luxy completely
-      luxyEnabled = false;
-      console.log("Luxy Disabled");
-    }
-  }
-
-  // Enable luxy only when width > 768px AND device is not touch
-  function checkLuxyStatus() {
-    if (window.innerWidth > 768 && !("ontouchstart" in window)) {
-      enableLuxy();
-    } else {
-      disableLuxy();
-    }
-  }
-
-  // Run on page load
-  checkLuxyStatus();
-
-  // Run when resizing the screen
-  window.addEventListener("resize", checkLuxyStatus);
-
-  // ------------------------------
-  // Your existing navbar & swiper code
-  // ------------------------------
+  requestAnimationFrame(raf);
   const toggleBtn = document.getElementById("toggler-btn");
   const navToggler = document.getElementById("nav-collapsed");
   const body = document.body;
@@ -67,5 +64,24 @@ document.addEventListener("DOMContentLoaded", () => {
       640: { slidesPerView: 2, spaceBetween: 20 },
     },
   });
+   const cursor = document.querySelector(".cursor");
+  let mouseX = 0;
+  let mouseY = 0;
+  let clientX = 0;
+  let clientY = 0;
+  document.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+  function MouseMove() {
+    clientX += (mouseX - clientX) * 0.05;
+    clientY += (mouseY - clientY) * 0.05;
+
+    cursor.style.top = clientY + "px";
+    cursor.style.left = clientX + "px";
+
+    requestAnimationFrame(MouseMove);
+  }
+  MouseMove();
   AOS.refresh();
 });
