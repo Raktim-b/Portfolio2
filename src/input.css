@@ -1,0 +1,389 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+@import "tailwindcss";
+
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+:root {
+  --animate-pulse: pulse 2s cubic-bezier(1, -0.1, 0, 1.21) infinite;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: "Geist", sans-serif;
+}
+
+a {
+  display: inline-block;
+}
+h2,
+h3,
+h4 {
+  font-family: "Anton", sans-serif;
+}
+/* Cursor */
+.cursor {
+  mix-blend-mode: difference;
+  height: 20px;
+  width: 20px;
+  cursor: none;
+  border-radius: 50%;
+  background: #cacaca;
+  opacity: 0.8;
+  backdrop-filter: 30px;
+  position: fixed;
+  z-index: 9999;
+}
+/* Header Section */
+#toggler-btn.tilted .toggle-line1 {
+  transition: all 0.3s ease-in-out;
+  transform: rotate(45deg) translate(6px, 6px);
+}
+#toggler-btn.tilted .toggle-line2 {
+  transition: all 0.3s ease-in-out;
+  transform: rotate(-45deg) translate(-4px, -6px);
+}
+
+/* Banner Section */
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+/* Social list */
+
+/* Auto scroll */
+.auto-scroll {
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 11%,
+    rgb(0, 0, 0) 23.5%,
+    rgb(0, 0, 0) 36.5%,
+    rgba(0, 0, 0, 0) 90%
+  );
+}
+.auto-scroll:hover > .auto-scroll-itms {
+  cursor: pointer;
+  animation-play-state: paused;
+}
+.auto-scroll-itms {
+  animation: rightTOLeft 16s linear infinite;
+}
+.auto-scroll-itms:nth-child(1) {
+  animation-delay: -0s;
+}
+.auto-scroll-itms:nth-child(2) {
+  animation-delay: -2s;
+}
+.auto-scroll-itms:nth-child(3) {
+  animation-delay: -4s;
+}
+.auto-scroll-itms:nth-child(4) {
+  animation-delay: -6s;
+}
+.auto-scroll-itms:nth-child(5) {
+  animation-delay: -8s;
+}
+.auto-scroll-itms:nth-child(6) {
+  animation-delay: -10s;
+}
+.auto-scroll-itms:nth-child(7) {
+  animation-delay: -12s;
+}
+.auto-scroll-itms:nth-child(8) {
+  animation-delay: -14s;
+}
+.auto-scroll2 {
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 11%,
+    rgb(0, 0, 0) 23.5%,
+    rgb(0, 0, 0) 36.5%,
+    rgba(0, 0, 0, 0) 68%
+  );
+  margin-top: -50px;
+  margin-left: -60px;
+  margin-bottom: 100px;
+}
+
+.auto-scroll-itms2 {
+  animation: rightTOLeft2 12s linear infinite;
+}
+.auto-scroll-itms2:nth-child(1) {
+  animation-delay: -0s;
+}
+.auto-scroll-itms2:nth-child(2) {
+  animation-delay: -2s;
+}
+.auto-scroll-itms2:nth-child(3) {
+  animation-delay: -4s;
+}
+.auto-scroll-itms2:nth-child(4) {
+  animation-delay: -6s;
+}
+.auto-scroll-itms2:nth-child(5) {
+  animation-delay: -8s;
+}
+.auto-scroll-itms2:nth-child(6) {
+  animation-delay: -10s;
+}
+/* About Section */
+.about-sec{
+  padding-bottom: 120px;
+}
+.parallax-img {
+  will-change: transform;
+}
+
+/* Project Section */
+.mySwiper {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 0, 0, 1) 1%,
+    rgba(0, 0, 0, 1) 99%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 0, 0, 1) 1%,
+    rgba(0, 0, 0, 1) 99%,
+    transparent
+  );
+}
+@keyframes rightTOLeft {
+  0% {
+    right: -4%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+@keyframes rightTOLeft2 {
+  0% {
+    right: -4%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+/* Service Section */
+.service-sec{
+  padding: 45px 0 450px;
+}
+.parallax-card-img{
+  margin-top: -350px;
+}
+@media screen and (max-width: 1400px) {
+  @keyframes rightTOLeft {
+    0% {
+      right: -20%;
+    }
+
+    100% {
+      right: 100%;
+    }
+  }
+  @keyframes rightTOLeft2 {
+    0% {
+      right: -20%;
+    }
+
+    100% {
+      right: 100%;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .auto-scroll2 {
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 11%,
+      rgb(0, 0, 0) 23.5%,
+      rgb(0, 0, 0) 36.5%,
+      rgba(0, 0, 0, 0) 68%
+    );
+    margin-top: -134px;
+    margin-left: -30px;
+  }
+  @keyframes rightTOLeft {
+    0% {
+      right: -16%;
+    }
+
+    100% {
+      right: 100%;
+    }
+  }
+  @keyframes rightTOLeft2 {
+    0% {
+      right: -16%;
+    }
+
+    100% {
+      right: 100%;
+    }
+  }
+  /* Service Section */
+  .service-sec{
+  padding: 45px 0 ;
+}
+.parallax-card-img{
+  margin-top: 0px;
+}
+}
+@media screen and (max-width: 992px) {
+  .nav-collapsed > li {
+    margin-right: 23px;
+  }
+  /* Auto Scroll Section */
+  .auto-scroll {
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 7%,
+      rgb(0, 0, 0) 23.5%,
+      rgb(0, 0, 0) 36.5%,
+      rgba(0, 0, 0, 0) 93%
+    );
+  }
+  .auto-scroll2 {
+    margin-top: -40px;
+    margin-left: -1px;
+    margin-bottom: 25px;
+  }
+  @keyframes rightTOLeft {
+    0% {
+      right: -50%;
+    }
+
+    100% {
+      right: 100%;
+    }
+  }
+  @keyframes rightTOLeft2 {
+    0% {
+      right: -50%;
+    }
+
+    100% {
+      right: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  @keyframes rightTOLeft {
+    0% {
+      right: -86%;
+    }
+
+    100% {
+      right: 100%;
+    }
+  }
+  @keyframes rightTOLeft2 {
+    0% {
+      right: -86%;
+    }
+
+    100% {
+      right: 100%;
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+  .auto-scroll2 {
+    margin-top: -40px;
+    margin-left: -1px;
+    margin-bottom: 5px;
+  }
+
+  @keyframes rightTOLeft {
+    0% {
+      right: -100%;
+    }
+
+    100% {
+      right: 100%;
+    }
+  }
+  @keyframes rightTOLeft2 {
+    0% {
+      right: -35%;
+    }
+
+    100% {
+      right: 100%;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .title4 {
+    font-size: 30px;
+  }
+  /* Header Section */
+  .navbar-collapsed {
+    width: 310px;
+  }
+  .nav-btn > a {
+    font-size: 26px;
+    padding: 16px;
+  }
+  /* Banner Section */
+  .bnnr-right {
+    margin-top: -80px;
+  }
+  /* Autoscroll Section */
+  @keyframes rightTOLeft {
+    0% {
+      right: -170%;
+    }
+
+    100% {
+      right: 100%;
+    }
+  }
+  /* About Section */
+  .about-hdr > .title2::after {
+    left: 83%;
+    top: 62%;
+  }
+  .about-cntn {
+    font-size: 17px;
+    line-height: 126%;
+  }
+  /* Project Section */
+  .Project-hdr > .title2::after {
+    left: 94%;
+  }
+  .count {
+    left: 95%;
+  }
+  /* Service Section */
+  .service-hdr > .title2::after {
+    left: 94%;
+    top: 63%;
+  }
+  /* F&Q Section */
+  .fq-hdr > .title2::after {
+    left: 71%;
+  }
+  /* Contact Section */
+  .contact-hdr > .title2::after {
+    left: 94%;
+  }
+}
