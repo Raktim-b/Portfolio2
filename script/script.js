@@ -1,12 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
   AOS.init();
+
   // Initialize Lenis
+
   const lenis = new Lenis({
     duration: 2,
 
     autoRaf: true,
   });
-    if (window.innerWidth < 1024) {
+  if (window.innerWidth < 1024) {
     lenis.destroy();
   }
 
@@ -29,14 +31,15 @@ document.addEventListener("DOMContentLoaded", () => {
       const speed = 0.13; // tweak this
 
       parallaxCards.forEach((card) => {
-        card.style.transform = `translateY(${
-          scroll * speed
-        }px)`;
+        card.style.transform = `translateY(${scroll * speed}px)`;
       });
     });
   }
 
   requestAnimationFrame(raf);
+
+  // Button Toggler
+
   const toggleBtn = document.getElementById("toggler-btn");
   const navToggler = document.getElementById("nav-collapsed");
   const body = document.body;
@@ -49,6 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
     body.classList.toggle("overflow-hidden");
     toggleBtn.classList.toggle("tilted");
   });
+
+  // Swiper
 
   const swiper = new Swiper(".mySwiper", {
     loop: true,
@@ -64,7 +69,10 @@ document.addEventListener("DOMContentLoaded", () => {
       640: { slidesPerView: 2, spaceBetween: 20 },
     },
   });
-   const cursor = document.querySelector(".cursor");
+
+  // Cursor
+
+  const cursor = document.querySelector(".cursor");
   let mouseX = 0;
   let mouseY = 0;
   let clientX = 0;
@@ -84,4 +92,19 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   MouseMove();
   AOS.refresh();
+});
+
+// Loader
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader-overlay");
+  const content = document.querySelector(".page-wrpr");
+
+  setTimeout(() => {
+    loader.classList.add("curtain-up");
+
+    setTimeout(() => {
+      loader.style.display = "none";
+      content.classList.remove("hidden");
+    }, 1000);
+  }, 2000);
 });
