@@ -90,19 +90,6 @@ h4 {
   
 }
 
-.loader-line {
-  position: absolute;
-  bottom: 32px;
-  left: 68%;
-  width: 0;
-  height: 3px;
-  background: linear-gradient(to right, #097877, #6ccdbf);
-  border-radius: 4px;
-  transform: translateX(-50%);
-  animation: lineGrow 0.8s ease forwards;
-  animation-delay: 0.6s;
-}
-
 @keyframes logoSlideIn {
   to {
     opacity: 1;
@@ -218,9 +205,7 @@ h4 {
   animation-delay: -10s;
 }
 /* About Section */
-.about-sec {
-  padding-bottom: 120px;
-}
+
 .parallax-img {
   will-change: transform;
 }
@@ -259,9 +244,7 @@ h4 {
   }
 }
 /* Service Section */
-.service-sec {
-  padding: 45px 0 450px;
-}
+
 .parallax-card-img {
   margin-top: -350px;
 }
@@ -316,9 +299,7 @@ h4 {
     }
   }
   /* Service Section */
-  .service-sec {
-    padding: 45px 0;
-  }
+ 
   .parallax-card-img {
     margin-top: 0px;
   }
@@ -363,9 +344,7 @@ h4 {
 }
 
 @media screen and (max-width: 768px) {
-  .cursor{
-    display: none;
-  }
+ 
   .loader-logo-img {
   width: 450px;}
   @keyframes rightTOLeft {
