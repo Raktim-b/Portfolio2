@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  AOS.init();
-
   // Initialize Lenis
 
   const lenis = new Lenis({
@@ -38,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   requestAnimationFrame(raf);
 
+  AOS.init();
   // Button Toggler
 
   const toggleBtn = document.getElementById("toggler-btn");
@@ -69,7 +68,15 @@ document.addEventListener("DOMContentLoaded", () => {
       640: { slidesPerView: 2, spaceBetween: 20 },
     },
   });
-
+  var swiper2 = new Swiper(".mySwiper2", {
+    direction: "vertical",
+    slidesPerView: "auto",
+    freeMode: true,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+    mousewheel: true,
+  });
   // Cursor
 
   const cursor = document.querySelector(".cursor");
@@ -105,6 +112,8 @@ window.addEventListener("load", () => {
     setTimeout(() => {
       loader.style.display = "none";
       content.classList.remove("hidden");
+      AOS.init();
+      AOS.refreshHard();
     }, 1000);
   }, 2000);
 });

@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "tailwindcss";
 
 @import "flowbite/src/themes/default";
@@ -24,6 +25,11 @@ h3,
 h4 {
   font-family: "Anton", sans-serif;
 }
+.pr-h1 {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -0.04em;
+}
+
 /* Loader */
 
 .loader-overlay {
@@ -87,7 +93,6 @@ h4 {
   opacity: 0;
   transform: translateY(-1000px);
   animation: logoSlideIn 1.2s ease forwards;
-  
 }
 
 @keyframes logoSlideIn {
@@ -111,6 +116,7 @@ h4 {
 }
 
 /* Banner Section */
+
 
 @keyframes float {
   0% {
@@ -299,7 +305,7 @@ h4 {
     }
   }
   /* Service Section */
- 
+
   .parallax-card-img {
     margin-top: 0px;
   }
@@ -344,9 +350,9 @@ h4 {
 }
 
 @media screen and (max-width: 768px) {
- 
   .loader-logo-img {
-  width: 450px;}
+    width: 450px;
+  }
   @keyframes rightTOLeft {
     0% {
       right: -86%;
@@ -367,8 +373,9 @@ h4 {
   }
 }
 @media screen and (max-width: 640px) {
-   .loader-logo-img {
-  width: 300px;}
+  .loader-logo-img {
+    width: 300px;
+  }
   .auto-scroll2 {
     margin-top: -40px;
     margin-left: -1px;
@@ -435,6 +442,12 @@ h4 {
     100% {
       right: 100%;
     }
+  }
+  .pr-h1{
+    font-size: 58px;
+    margin-left: -4px;
+    margin-top: -12px;
+
   }
   /* About Section */
   .about-hdr > .title2::after {
