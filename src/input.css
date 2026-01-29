@@ -25,10 +25,6 @@ h3,
 h4 {
   font-family: "Anton", sans-serif;
 }
-.pr-h1 {
-  font-family: "Poppins", sans-serif;
-  letter-spacing: -0.04em;
-}
 
 /* Loader */
 
@@ -72,13 +68,6 @@ h4 {
   transform: translateY(-100%);
 }
 
-.loader-content {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
 /* Hide loader content with curtain */
 .loader-overlay.curtain-up .loader-content {
   opacity: 0;
@@ -98,11 +87,11 @@ h4 {
 @keyframes logoSlideIn {
   to {
     opacity: 1;
-    transform: translateY(-30px);
+    transform: translateY(0);
   }
 }
 
-.hidden {
+.cntnthidden {
   display: none;
 }
 /* Header Section */
@@ -116,7 +105,6 @@ h4 {
 }
 
 /* Banner Section */
-
 
 @keyframes float {
   0% {
@@ -253,6 +241,11 @@ h4 {
 
 .parallax-card-img {
   margin-top: -350px;
+}
+/* Project Page */
+.pr-h1 {
+  /* font-family: "Poppins", sans-serif; */
+  letter-spacing: -0.05em;
 }
 @media screen and (max-width: 1400px) {
   @keyframes rightTOLeft {
@@ -443,11 +436,10 @@ h4 {
       right: 100%;
     }
   }
-  .pr-h1{
+  .pr-h1 {
     font-size: 58px;
     margin-left: -4px;
     margin-top: -12px;
-
   }
   /* About Section */
   .about-hdr > .title2::after {

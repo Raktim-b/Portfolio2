@@ -58,12 +58,12 @@ document.addEventListener("DOMContentLoaded", () => {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 20,
-    // speed: 3000,
-    // autoplay: {
-    //   delay: 0,
-    //   disableOnInteraction: false,
-    //   pauseOnMouseEnter: true,
-    // },
+    speed: 3000,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
     breakpoints: {
       640: { slidesPerView: 2, spaceBetween: 20 },
     },
@@ -111,7 +111,7 @@ window.addEventListener("load", () => {
 
     setTimeout(() => {
       loader.style.display = "none";
-      content.classList.remove("hidden");
+      content.classList.remove("cntnthidden");
       AOS.init();
       AOS.refreshHard();
     }, 1000);
