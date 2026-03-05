@@ -247,6 +247,7 @@ h4 {
   /* font-family: "Poppins", sans-serif; */
   letter-spacing: -0.05em;
 }
+
 @media screen and (max-width: 1400px) {
   @keyframes rightTOLeft {
     0% {

@@ -98,6 +98,70 @@ document.addEventListener("DOMContentLoaded", () => {
     requestAnimationFrame(MouseMove);
   }
   MouseMove();
+  // ===============================
+// FORM VALIDATION
+// ===============================
+const form = document.querySelector("form");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const firstName = document.getElementById("firstName");
+  const lastName = document.getElementById("lastName");
+  const email = document.getElementById("email");
+  const message = document.getElementById("message");
+
+  let isValid = true;
+
+  // Clear previous errors
+  document.querySelectorAll(".error-text").forEach(el => el.remove());
+  document.querySelectorAll("input, textarea").forEach(el => {
+    el.classList.remove("border-red-500");
+  });
+
+  // Helper function
+  function showError(input, msg) {
+    isValid = false;
+    input.classList.add("border-red-500");
+
+    const error = document.createElement("p");
+    error.className = "error-text text-red-500 text-sm mt-1";
+    error.innerText = msg;
+
+    input.parentElement.appendChild(error);
+  }
+
+  // First Name
+  if (firstName.value.trim().length < 2) {
+    showError(firstName, "First name must be at least 2 characters");
+  }
+
+  // Last Name
+  if (lastName.value.trim().length < 2) {
+    showError(lastName, "Last name must be at least 2 characters");
+  }
+
+  // Email
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email.value.trim())) {
+    showError(email, "Enter a valid email address");
+  }
+
+  // Message
+  if (message.value.trim().length < 10) {
+    showError(message, "Message must be at least 10 characters");
+  }
+
+  // Success
+  if (isValid) {
+    console.log("Form submitted successfully");
+
+    form.reset();
+
+    alert("Message sent successfully 🚀");
+  }
+});
+
   AOS.refresh();
 });
 
