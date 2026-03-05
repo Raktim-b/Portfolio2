@@ -423,8 +423,8 @@
   .mt-45 {
     margin-top: calc(var(--spacing) * 45);
   }
-  .mt-\[19px\] {
-    margin-top: 19px;
+  .mt-\[17px\] {
+    margin-top: 17px;
   }
   .mr-0 {
     margin-right: calc(var(--spacing) * 0);
@@ -1568,6 +1568,11 @@
   .sm\:mt-30 {
     @media (width >= 40rem) {
       margin-top: calc(var(--spacing) * 30);
+    }
+  }
+  .sm\:mt-\[19px\] {
+    @media (width >= 40rem) {
+      margin-top: 19px;
     }
   }
   .sm\:mb-3 {
